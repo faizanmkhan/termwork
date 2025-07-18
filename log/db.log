@@ -1,0 +1,37 @@
+2025-07-15 09:00:01 QUERY SELECT * FROM users WHERE active=1;
+2025-07-15 09:01:10 ERROR Query timeout: query_id=56789
+2025-07-15 09:03:20 QUERY INSERT INTO logs (message) VALUES ('User logged in');
+2025-07-15 09:04:05 INFO  Rows inserted: 1
+2025-07-15 09:05:10 QUERY UPDATE users SET last_login=NOW() WHERE user_id=1001;
+2025-07-15 09:06:25 ERROR Invalid query: query_id=12345
+2025-07-15 09:08:10 QUERY SELECT * FROM orders WHERE status='pending';
+2025-07-15 09:09:30 INFO  Query successful: query_id=56789 row_count=35
+2025-07-15 09:11:10 ERROR Database connection lost: query_id=67890
+2025-07-15 09:12:30 QUERY DELETE FROM logs WHERE timestamp < NOW() - INTERVAL 30 DAY;
+2025-07-15 09:14:00 INFO  Rows deleted: 120
+2025-07-15 09:15:40 QUERY SELECT * FROM users WHERE email LIKE '%@example.com%';
+2025-07-15 09:16:50 INFO  Query successful: query_id=67891 row_count=42
+2025-07-15 09:18:10 ERROR Query execution failed: query_id=98765
+2025-07-15 09:19:30 QUERY UPDATE inventory SET stock_count=stock_count - 1 WHERE product_id=101;
+2025-07-15 09:20:50 INFO  Rows updated: 1
+2025-07-15 09:22:10 ERROR Timeout error: query_id=23456
+2025-07-15 09:23:25 QUERY SELECT product_name FROM inventory WHERE stock_count > 10;
+2025-07-15 09:24:40 INFO  Query successful: query_id=34567 row_count=12
+2025-07-15 09:25:50 ERROR Query syntax error: query_id=78901
+2025-07-15 09:27:00 QUERY INSERT INTO users (user_id, email) VALUES (101, 'user101@example.com');
+2025-07-15 09:28:20 INFO  Rows inserted: 1
+2025-07-15 09:29:40 QUERY SELECT * FROM users WHERE user_id=101;
+2025-07-15 09:30:50 INFO  Query successful: query_id=23457 row_count=1
+2025-07-15 09:32:00 ERROR Database unreachable: query_id=34568
+2025-07-15 09:33:10 QUERY SELECT COUNT(*) FROM orders WHERE order_date >= '2025-01-01';
+2025-07-15 09:34:20 INFO  Query successful: query_id=45678 row_count=112
+2025-07-15 09:35:40 ERROR Query execution failed: query_id=56790
+2025-07-15 09:37:00 QUERY INSERT INTO logs (message) VALUES ('Database operation completed');
+2025-07-15 09:38:10 INFO  Rows inserted: 1
+2025-07-15 09:39:30 QUERY SELECT * FROM users WHERE last_login > '2025-07-01';
+2025-07-15 09:40:40 INFO  Query successful: query_id=45679 row_count=28
+2025-07-15 09:42:00 ERROR Unknown error occurred: query_id=67891
+2025-07-15 09:43:20 QUERY DELETE FROM users WHERE last_login < '2025-01-01';
+2025-07-15 09:44:40 INFO  Rows deleted: 15
+2025-07-15
+

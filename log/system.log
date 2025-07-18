@@ -1,0 +1,40 @@
+Jul 15 09:00:01 server1 systemd[1]: Starting System Logging Service...
+Jul 15 09:00:03 server1 rsyslogd[1122]: [origin software=rsyslogd swVersion=8.2102.0 x-pid=1122 x-info=https://www.rsyslog.com] start
+Jul 15 09:02:10 server1 kernel: [100025] TCP: Hash tables configured (established 8192 bind 8192)
+Jul 15 09:03:15 server1 auditd[1235]: Audit daemon started
+Jul 15 09:04:45 server1 systemd[1]: Started System Logging Service.
+Jul 15 09:05:00 server1 rsyslogd[1122]: [origin software=rsyslogd swVersion=8.2102.0 x-pid=1122 x-info=https://www.rsyslog.com] exit
+Jul 15 09:06:30 server1 kernel: [100130] systemd[1]: Starting systemd-journald...
+Jul 15 09:08:10 server1 systemd-journald[1253]: Journal started
+Jul 15 09:09:05 server1 systemd[1]: Stopped System Logging Service.
+Jul 15 09:10:50 server1 kernel: [100200] Linux version 5.10.0-0.bpo.9-amd64
+Jul 15 09:12:10 server1 sshd[1311]: Accepted password for user1 from 192.168.0.5 port 12345 ssh2
+Jul 15 09:13:30 server1 sshd[1325]: Accepted password for user2 from 192.168.0.6 port 12346 ssh2
+Jul 15 09:14:20 server1 systemd[1]: Reached target Multi-User System.
+Jul 15 09:16:05 server1 kernel: [100250] [UFW] ALLOW IN 192.168.0.5:22
+Jul 15 09:17:00 server1 systemd[1]: Starting Session 2 of user1.
+Jul 15 09:18:30 server1 systemd[1]: Started Session 2 of user1.
+Jul 15 09:19:45 server1 systemd[1]: Starting Session 3 of user2.
+Jul 15 09:20:55 server1 systemd[1]: Started Session 3 of user2.
+Jul 15 09:22:15 server1 sshd[1340]: Accepted password for user3 from 192.168.0.7 port 12347 ssh2
+Jul 15 09:23:50 server1 systemd[1]: Started Session 4 of user3.
+Jul 15 09:25:05 server1 kernel: [100300] [UFW] DENY IN 192.168.0.10:22
+Jul 15 09:26:20 server1 systemd[1]: Starting Session 5 of user4.
+Jul 15 09:27:15 server1 systemd[1]: Started Session 5 of user4.
+Jul 15 09:28:30 server1 sshd[1355]: Accepted password for user4 from 192.168.0.8 port 12348 ssh2
+Jul 15 09:30:00 server1 kernel: [100350] [UFW] ALLOW IN 192.168.0.8:22
+Jul 15 09:31:20 server1 systemd[1]: Started Session 6 of user5.
+Jul 15 09:32:50 server1 sshd[1370]: Accepted password for user5 from 192.168.0.9 port 12349 ssh2
+Jul 15 09:34:10 server1 systemd[1]: Started Session 7 of user6.
+Jul 15 09:35:30 server1 systemd[1]: Started Session 8 of user7.
+Jul 15 09:37:05 server1 systemd[1]: Starting User Slice of user1.
+Jul 15 09:38:25 server1 systemd[1]: Started User Slice of user1.
+Jul 15 09:39:45 server1 kernel: [100400] [UFW] ALLOW IN 192.168.0.10:22
+Jul 15 09:40:55 server1 systemd[1]: Starting Session 9 of user8.
+Jul 15 09:42:15 server1 systemd[1]: Started Session 9 of user8.
+Jul 15 09:43:30 server1 kernel: [100450] [UFW] DENY IN 192.168.0.15:22
+Jul 15 09:44:50 server1 systemd[1]: Started Session 10 of user9.
+Jul 15 09:46:10 server1 sshd[1390]: Accepted password for user9 from 192.168.0.11 port 12350 ssh2
+Jul 15 09:47:25 server1 systemd[1]: Started Session 11 of user10.
+Jul 15 09:49:00 server1 kernel: [100500] [UFW] ALLOW IN 192.168.0.11:22
+

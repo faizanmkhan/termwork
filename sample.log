@@ -1,0 +1,38 @@
+2025-07-15 10:15:23 INFO  User login: user_id=103 ip=192.168.1.10
+2025-07-15 10:16:45 WARN  Disk usage high: server=alpha usage=85%
+2025-07-15 10:18:01 ERROR Failed login attempt: user_id=107 ip=192.168.1.25
+2025-07-15 10:20:12 INFO  File uploaded: user_id=103 filename=document.pdf
+2025-07-15 10:22:30 ERROR File not found: filename=report.docx
+2025-07-15 10:23:47 INFO  User logout: user_id=103
+2025-07-15 10:25:00 WARN  CPU temperature high: server=beta temp=77°C
+2025-07-15 10:27:18 INFO  User login: user_id=108 ip=192.168.1.12
+2025-07-15 10:29:33 ERROR Database connection timeout
+2025-07-15 10:30:45 INFO  Scheduled backup completed: server=alpha
+2025-07-15 09:00:01 INFO  User login: user_id=1001 ip=10.0.0.5
+2025-07-15 09:02:17 ERROR Failed login: user_id=1002 ip=10.0.0.6
+2025-07-15 09:03:22 INFO  User logout: user_id=1001
+2025-07-15 09:05:10 WARN  Suspicious login pattern: user_id=1003
+10.0.0.5 - - [15/Jul/2025:10:01:42 +0000] "GET /index.html HTTP/1.1" 200 1024
+10.0.0.6 - - [15/Jul/2025:10:02:03 +0000] "POST /login HTTP/1.1" 302 512
+10.0.0.7 - - [15/Jul/2025:10:02:45 +0000] "GET /dashboard HTTP/1.1" 403 256
+10.0.0.8 - - [15/Jul/2025:10:03:12 +0000] "GET /api/data HTTP/1.1" 500 128
+2025-07-15 10:15:23 INFO  Application started
+2025-07-15 10:16:45 WARN  Configuration file missing: config.yaml
+2025-07-15 10:18:01 ERROR Unable to connect to service: retrying...
+2025-07-15 10:20:12 INFO  Process completed: status=success duration=35s
+2025-07-15 09:30:01 QUERY SELECT * FROM users WHERE active=1;
+2025-07-15 09:30:02 ERROR Database timeout on query id=8392
+2025-07-15 09:30:05 QUERY INSERT INTO logs (message) VALUES ('start');
+2025-07-15 09:30:06 INFO  Rows inserted: 1
+2025-07-15 08:00:00 INFO  System boot complete
+2025-07-15 08:01:45 WARN  CPU temperature high: 85°C
+2025-07-15 08:03:12 INFO  Service restarted: sshd
+2025-07-15 08:05:32 ERROR Kernel panic - not syncing: Fatal exception
+2025-07-15 07:55:22 INFO  Interface eth0 up: ip=192.168.0.10
+2025-07-15 07:56:11 WARN  Packet loss detected: interface=eth0 loss=12%
+2025-07-15 07:57:05 ERROR Connection refused to host=10.0.0.9 port=443
+2025-07-15 07:58:30 INFO  Interface eth0 down
+2025-07-14 23:59:59 INFO  Backup started: target=/mnt/backup
+2025-07-15 00:05:00 INFO  Backup completed: duration=5m1s size=2.1GB
+2025-07-15 00:06:10 ERROR Failed to verify backup integrity
+2025-07-15 00:07:30 WARN  Low disk space: available=3%
